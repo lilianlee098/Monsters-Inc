@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <title>Monsters Inc.</title>
+        <link rel="stylesheet" href="css/personalstyle.css">
+          <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="headerbox">
+                <a href="index.html"><img src="img/Monsters_inc_logo.jpg"></a>
+                <div class="mainnav">
+                    <a href="personal.html">PERSONAL</a>
+                    <a href="business.html">BUSINESS</a>
+                    <a href="products.html">PRODUCTS</a>
+                    <a href="aboutus.html">ABOUT    US</a>
+               <!-- Button to open the modal login form -->
+                <a><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
+                    </div>
+                <div class="secondnav">
+                    <a href="#ourpp">OUR PERSONAL PLANS</a>
+
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            
+            <img src="img/house1.jpg">
+            <div class="mainbox">
+                <div class="mainp">
+                    <h2>WE PUT OUR ENERGY INTO <br>YOUR HOME.</h2>
+                    <img src="img/car.jpg"></div>
+                <div class="sidep">
+                    <h3>REASONS TO CHOOSE PERSONAL WITH MONSTERS INC.</h3>
+                    <p>Using Scream Energy to power your home, car and contents.
+                        <br>An easy 30 day trial if wanted.  
+                        <br>Can have both fixed and unfixed flexible energy power plans to suit your home needs. 
+                        <br>Easy switch between other energy companies to ours.
+                        <br>Monsters Inc. is sustainable and environmentally friendly.
+                    </p>
+                    <img src="img/dorm.jpg" id="ourpp">
+                </div>
+                
+            
+                <div class="opp"> <h1>OUR PERSONAL PLANS</h1> </div>
+                
+                <div class="joinus"> <h3>JOIN MONSTERS INC. AND TAKE CONTROL OF YOUR ENERGY FOR YOUR BUSINESS. WE SCARE BECAUSE WE CARE. WE’RE WORKING FOR A BETTER TOMORROW, TODAY! SO GET STARTED BY CHOOSING A PLAN BELOW, TODAY!</h3>
+                </div>
+    
+                
+                <section></section>
+                <section></section>
+                <section></section>
+                
+                <!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>EMAIL</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+                
+                <article class="clearfix"></article>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footerbox">
+                <img src="img/Monsters_inc_logo.png">
+            </div>
+        </footer>
+    
+    </body>
+    
+</html>

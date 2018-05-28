@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <title>Monsters Inc.</title>
+        <link rel="stylesheet" href="css/ourfactorystyle.css">
+          <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="headerbox">
+                <a href="index.html"><img src="img/Monsters_inc_logo.jpg"></a>
+                <div class="mainnav">
+                    <a href="personal.html">PERSONAL</a>
+                    <a href="business.html">BUSINESS</a>
+                    <a href="products.html">PRODUCTS</a>
+                    <a href="aboutus.html">ABOUT    US</a>
+                <!-- Button to open the modal login form -->
+                <a><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
+                    </div>
+                <div class="secondnav">
+                    <a href="ourmonsters.html">OUR MONSTERS</a>
+                    <a href="ourfactory.html">OUR FACTORY</a>
+                    <a href="ourservices.html">OUR SERVICES</a>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            
+            <img src="img/O_F.png">
+            <div class="mainbox">
+                <h1>MONSTERS INCORPORATED</h1>
+                <p>Monsters, Inc.'s main duty is to provide all citizens in Monstropolis with energy in the form of captured screams collected from children. They accomplish this by crossing into the Human World through the closets of children's bedrooms and scaring them to the best of their ability. The screams are then collected in special canisters for use as energy.
+
+<br><br>The factory is an immense facility equipped to fulfill the needs of its employees. Scaring takes places in rooms called "Scare Floors," where the monsters cross over into the human world using the doors of the children's closets. The doors are stored in an immense "Door Vault" and are brought to and from the Scare Floor by an automated system. Each Scarer has an assistant to help coordinate the energy collection. Any door belonging to a child who has no fear of monsters is promptly destroyed in the Door Shredder, as their screams cannot be collected.</p>
+                <h2> The Lobby </h2>
+                <img src="img/lobby.jpg">
+                <p> This is the lobby located in front of the factory, which depicts various clocks depicting various time zones around the world placed over a mural depicting a world map. On one wall is a "Scarer of the Month" gallery which has now also turned to "Monster of Comedy".</p>
+                <h2>Door Vault</h2>
+                <img src="img/dooryvault.jpg">
+                <p>This is the largest room in the factory. It is a large area where all of the doors are kept when not in use, and are transported to the scare floors via a series of overhead conveyor belts arranged in a manner similar to rollercoaster tracks. There are about 36 million doors stored in the vault. It's about half a mile long (2640 ft), and that on any one given level in the vault, you can fit an entire Statue of Liberty in there.</p>
+                <h2>Scare Floor</h2>
+                <img src="img/scarefloor.jpeg">
+                <p>This is the Scare Floor where  the scarers and their assistants work. It is a large room where various children's closet doors are brought in from the Door Vault by an overhead conveyor belt and are brought down by lifts on the ground. Then, the scarers enter the doors and try their best to scare as many children as possible to collect more screams. Near the entrance is a giant clock and monitor display showing the Scarers' ranks and a map showing the area the Scarers will scare children.</p>
+                <h2>Laugh Floor</h2>
+                <img src="img/laughfloor.jpg">
+                <p> James P. Sullivan, who has discovered that laughter produces more power than scream has done and reestablishes the company to have the monsters make children laugh, and converted some scare floors to laugh floors.</p>
+                <h2>Stimulation Room</h2>
+                <img src="img/stimulator.jpg">
+                <p>This room, featuring a simulated child's bedroom and an animatronic boy dummy, is often used to introduce newcomers to working at the factory. The simulation room is supervised by Flint.</p>
+                <!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>EMAIL</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+                <article class="clearfix"></article>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footerbox">
+                <img src="img/Monsters_inc_logo.png">
+            </div>
+        </footer>
+    
+    </body>
+    
+</html>
