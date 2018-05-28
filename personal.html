@@ -4,18 +4,26 @@
 
     <head>
     <title>Monsters Inc.</title>
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+      
+        <!-- Boostrap CSS -->
+<!--        <link rel="stylesheet" href="css/cssbootstrap/bootstrap.min.css">-->
+        <!--our style file should be after bootstrap so it overwrites whatever we want.-->
         <link rel="stylesheet" href="css/personalstyle.css">
           <script>
-// Get the modal
-var modal = document.getElementById('id01');
+            // Get the modal 
+            var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -41,14 +49,14 @@ window.onclick = function(event) {
         <main>
             
             <img src="img/house1.jpg">
-            <div class="mainbox">
-                <div class="mainp">
+            <div class="mainbox" >
+                <div class="mainp col-sm-12 col-md-6 col-lg-12" >
                     <h2>WE PUT OUR ENERGY INTO <br>YOUR HOME.</h2>
                     <img src="img/car.jpg"></div>
                 <div class="sidep">
                     <h3>REASONS TO CHOOSE PERSONAL WITH MONSTERS INC.</h3>
                     <p>Using Scream Energy to power your home, car and contents.
-                        <br>An easy 30 day trial if wanted.  
+                        <br>An easy 30 day trial if wanted.
                         <br>Can have both fixed and unfixed flexible energy power plans to suit your home needs. 
                         <br>Easy switch between other energy companies to ours.
                         <br>Monsters Inc. is sustainable and environmentally friendly.
@@ -63,36 +71,45 @@ window.onclick = function(event) {
                 </div>
     
                 
-                <section></section>
-                <section></section>
-                <section></section>
+                <section>
+                    <img src="img/tsp.png">
+                    <a href="#">SIGN UP NOW</a>
+                </section>
+                <section>
+                    <img src="img/tfp.png">
+                    <a href="#">SIGN UP NOW</a>
+                </section>
+                <section>
+                    <img src="img/hhp.png"/>
+                    <a href="#">SIGN UP NOW</a>
+                </section>
                 
                 <!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
+                <div id="id01" class="modal">
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                class="close" title="Close Modal">&times;</span>
 
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
-    </div>
+                  <!-- Modal Content -->
+                  <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
+                    </div>
 
-    <div class="container">
-      <label for="uname"><b>EMAIL</b></label>
-      <input type="text" placeholder="Enter Email" name="uname" required>
+                    <div class="container">
+                      <label for="uname"><b>EMAIL</b></label>
+                      <input type="text" placeholder="Enter Email" name="uname" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
+                      <label for="psw"><b>Password</b></label>
+                      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
 
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
                 
                 <article class="clearfix"></article>
             </div>
@@ -103,6 +120,10 @@ class="close" title="Close Modal">&times;</span>
                 <img src="img/Monsters_inc_logo.png">
             </div>
         </footer>
+        
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
     
     </body>
     
