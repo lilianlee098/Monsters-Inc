@@ -42,6 +42,10 @@ header{
     color: #3A6899;
 }
 
+.headerbox a:hover{
+    color:black;
+}
+
 .secondnav{
     width: 400px;
     height: auto;
@@ -58,9 +62,6 @@ header{
     color: #3A6889;
     font-size: 0.9em;
 }
-.headerbox a:hover{
-    color:black;
-}
 
 main{
     padding-top:390px;
@@ -75,6 +76,19 @@ main img{
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+.mainbox h1{
+    color: #3a6899;
+    
+}
+
+.mainbox p{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 /* The Modal (background) */

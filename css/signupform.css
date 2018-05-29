@@ -5,6 +5,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/*HEADER*/
 header{
     width: 100%;
     min-height: 150px;
@@ -46,6 +47,7 @@ header{
     color:black;
 }
 
+/*MAIN*/
 main{
     padding-top:340px;
 }
@@ -61,18 +63,41 @@ main img{
     margin-right: auto; 
 }
 
-.signupform{
-    width: 960px;
-    
-}
-.signupform h2{
+div label{
+    font-weight: 900;
     color: #3a6899;
-    float: left;
+}
+
+.checkboxb{
+    border: 1px solid #3a6899;
+    width: 480px;
+    padding: 10px;
+    margin-top:10px; 
+    margin-bottom: 20px;
+}
+.checkboxb label{
+    font-weight: 100;
+    color: black;
+}
+
+.submitbutton{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="button"]{
+    background-color: #3a6899;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 100px;
 }
 
 section{
     width: 
 }
+
 section img{
     width: 230px;
 }
@@ -187,6 +212,8 @@ span.psw {
 .clearfix{
     clear: both;
 }
+
+/*FOOTER*/
 footer{
     height: 70px;
 }
@@ -204,6 +231,9 @@ footer{
     width: 50px;
     margin-top: 10px;
 }
+
+/*MEDIA QUERIES*/
+
 
 /* Small devices(landscape phones, 576px and up) */
 @media(min-width:576px){

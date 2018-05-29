@@ -24,64 +24,151 @@
 
     <body>
         
+        <!--Header-->
         <header>
             <div class="headerbox">
+                <!--Logo-->
                 <div class="logocontainer">
                     <a href="index.html"><img src="img/Monsters_inc_logo.jpg"></a>
                 </div>
+                
+                <!--Navigation-->
                 <div class="mainnav">
-                <a href="personal.html">PERSONAL</a>
-                <a href="business.html">BUSINESS</a>
-                <a href="products.html">PRODUCTS</a>
-                <a href="aboutus.html">ABOUT US</a>
-                <!-- Button to open the modal login form -->
-<!--                <a><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>-->
-                    </div>
+                    <a href="personal.html">PERSONAL</a>
+                    <a href="business.html">BUSINESS</a>
+                    <a href="products.html">PRODUCTS</a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <!-- Button to open the modal login form -->
+                    <!--<a><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>-->
+                 </div>
             </div>
         </header>
-    
+        
+        <!--Main-->
         <main>
             <img src="img/file.jpg">
-         <div class="mainbox">
-             <div class="signupform">
-                 <h2>SIGN UP IN UNDER 5 MINUTES</h2>
-                 <form>
-                     
+            
+            <!--FORM-->
+            <div class="mainbox">
+                <h2>SIGN UP IN UNDER 5 MINUTES</h2>
+                <form action="#">
+                    <b>Your details</b>
+                    <div>
+                         <input type="text" id="title" name="user_title" value="TITLE">
+                        
+                         <input type="text" id="firstname" name="user_firstname" value="FULL FIRST NAME">
+                        
+                         <input type="text" id="middlename" name="user_middlename" value="MIDDLE NAME">
+                        
+                         <input type="text" id="surname" name="user_surname" value="SURNAME">
+                        
+                         <input type="text" id="phone" name="user_phone" value="PHONE">
+                        
+                         <input type="text" id="email" name="user_email" value="EMAIL">
+                     </div>
+                    <b>Property details</b>
+                    <div>
+                         <input type="text" id="homeaddress" name="user_homeaddress" value="HOME ADDRESS">
+                        <label>IS THIS YOUR PRIMARY ADDRESS?</label>
+                            <div class="checkboxb">
+                                <input type="radio" id="yes" name="address" value="yes" >
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="no" name="address" value="no" >
+                                <label for="no">No</label>
+                             </div>
+                        <label>WHAT ENERGY SERVICES DO YOU REQUIRE?</label>
+                        <div class="checkboxb">
+                                <input type="checkbox" id="SCE" name="energy" value="SCE" >
+                                <label for="SCE">Scream Energy</label>
+                                <input type="checkbox" id="LCE" name="energy" value="LCE" >
+                                <label for="LCE">Laugh Energy</label>
+                        </div>
+                        <label>HOW MANY MONSTERS LIVE IN YOUR HOUSEHOLD?</label>
+                        <div class="checkboxb">
+                                <input type="radio" id="1" name="monsters" value="1" >
+                                <label for="1">1</label>
+                                <input type="radio" id="2" name="monsters" value="2" >
+                                <label for="2">2</label><input type="radio" id="3" name="monsters" value="3" >
+                                <label for="3">3</label>
+                                <input type="radio" id="4" name="monsters" value="4" >
+                                <label for="4">4 or more</label>
+                    </div>
+                        <label>HOW DO YOU HEAT YOUR WATER?</label>
+                        <div class="checkboxb">
+                        <input type="radio"  id="elec" name="water" value="elec">
+                            <label for="elec">Electricity</label>
+                        <input type="radio"  id="natural" name="water" value="natural">
+                            <label for="natural">Natural</label>
+                        <input type="radio"  id="cangas" name="water" value="cangas">
+                            <label for="cangas">Canister Gas</label></div>
+                        <label>WHAT IS YOUR SITUATION?</label>
+                        <div class="checkboxb">
+                        <input type="checkbox"  id="move" name="sit" value="move">
+                            <label for="move">I'm moving/ I just moved</label>
+                        <input type="checkbox"  id="switch" name="sit" value="switch">
+                            <label for="switch">I want to switch energy</label></div>
+                    </div>
+                    <b>Billing details</b>
+                    <div>
+                        <label>HOW WOULD YOU LIKE TO PAY YOUR ACCOUNT EACH MONTH?</label>
+                        <div class="checkboxb">
+                            <input type="radio"  id="credit" name="pay" value="credit">
+                            <label for="credit">Credit or debit card</label>
+                            <input type="radio"  id="direct" name="pay" value="direct">
+                            <label for="direct">Direct debit</label>
+                            <input type="radio"  id="internet" name="pay" value="internet">
+                            <label for="internet">Internet Payment</label>
+                        </div>
+                    </div>
+                    <b>Communication preferences</b>
+                    <div>
+                        <label></label>
+                        <div class="checkboxb">
+                            <input type="radio" id="gmail" name="commu" value="gmail">
+                            <label for="gmail">Email</label>
+                            <input type="radio" id="post" name="commu" value="post">
+                            <label for="post">Post</label>
+                        </div>
+                    </div>
+                    <div class="submitbutton">
+                        <input type="button" value="Submit" onclick="window.location.href='aftersignup.html'"></div>
                  </form>
-             </div>
-
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
-
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>EMAIL</b></label>
-      <input type="text" placeholder="Enter Email" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
              
+
+                <!-- The Modal -->
+                <div id="id01" class="modal">
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                class="close" title="Close Modal">&times;</span>
+
+                  <!-- Modal Content -->
+                  <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                      <label for="uname"><b>EMAIL</b></label>
+                      <input type="text" placeholder="Enter Email" name="uname" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
+
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+
              
-            <article class="clearfix"></article>
+                <article class="clearfix"></article>
             </div>
         </main>
         
+        
+        <!--Footer-->
         <footer>
             <div class="footerbox">
                 <img src="img/Monsters_inc_logo.png">
