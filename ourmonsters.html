@@ -6,7 +6,11 @@
     <title>Monsters Inc.</title>
         <link rel="stylesheet" href="css/ourmonsters.css">
         
-        <script src="jquery-3.3.1.min.js"></script>          
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+        <script src="js/jquery.fancybox.min.js"></script>
         
         <script>
             // Get the modal 
@@ -23,6 +27,7 @@
 
     <body>
         
+        <!--HEADER-->
         <header>
             <div class="headerbox">
                 <div class="logocontainer">
@@ -47,69 +52,80 @@
             </div>
         </header>
     
+        <!--MAIN-->
         <main>
-            
             <img src="img/O_M.jpg">
             <div class="mainbox">
                 <section>
-                <img src="img/sulleysul.jpg">
+                    <a data-fancybox="gallery" href="img/sulleysul2.jpg"><img src="img/sulleysul.jpg"></a>
                 <p>JAMES P. "SULLEY" SULLIVAN</p>
                 </section>
-                <section><img src="img/mikewazow.jpg">
-                <p>MIKE WAZOWSKI</p>
-                </section>
-                <section><img src="img/rb.jpg">
-                <p >RANDALL BOGGS</p>
-                </section>
-                <section><img src="img/rickyplesuski.jpg">
-                <p>RICKY PLESUSKI</p>
-                </section>
-                <section><img src="img/bob_peterson.jpg">
-                <p>BOB PETERSON</p>
-                </section>
-                <section><img src="img/tedpauley.jpg">
-                <p>TED PAULEY</p>
-                </section>
-                <section><img src="img/peteward.jpg">
-                <p >PETE WARD</p>
-                </section>
-                <section><img src="img/augustusjones.jpg">
-                <p >AUGUSTUS JONES</p>
+                <section>
+                    <a data-fancybox="gallery" href="img/mikewazow2.jpg"><img src="img/mikewazow.jpg"></a>
+                    <p>MIKE WAZOWSKI</p>
                 </section>
                 <section>
-                <img src="img/56_George_Sanderson.jpg">
-                <p>GEORGE SANDERSON</p>
+                    <a data-fancybox="gallery" href="img/rb2.jpg"><img src="img/rb.jpg"></a>
+                    <p >RANDALL BOGGS</p>
                 </section>
+                <section>
+                    <a data-fancybox="gallery" href="img/rickyplesuski2.jpg"><img src="img/rickyplesuski.jpg"></a>
+                <p>RICKY PLESUSKI</p>
+                </section>
+                <section>
+                    <a data-fancybox="gallery" href="img/bob_peterson2.jpg"><img src="img/bob_peterson.jpg"></a>
+                    <p>BOB PETERSON</p>
+                </section>
+                <section>
+                    <a data-fancybox="gallery" href="img/tedpauley2.jpg"><img src="img/tedpauley.jpg"></a>
+                    <p>TED PAULEY</p>
+                </section>
+                <section>
+                    <a data-fancybox="gallery" href="img/peteward2.jpg"><img src="img/peteward.jpg"></a>
+                    <p >PETE WARD</p>
+                </section>
+                <section>
+                    <a data-fancybox="gallery" href="img/augustusjones2.jpg"><img src="img/augustusjones.jpg"></a>
+                    <p >AUGUSTUS JONES</p>
+                </section>
+                <section>
+                    <a data-fancybox="gallery" href="img/georgesanderson2.jpg"><img src="img/56_George_Sanderson.jpg"></a>
+                    <p>GEORGE SANDERSON</p>
+                </section>
+                
+                
                 <!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
+                <div id="id01" class="modal">
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                class="close" title="Close Modal">&times;</span>
 
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
-    </div>
+                  <!-- Modal Content -->
+                  <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                      <img src="img/Monsters_inc_logo.jpg" alt="Avatar" class="avatar">
+                    </div>
 
-    <div class="container">
-      <label for="uname"><b>EMAIL</b></label>
-      <input type="text" placeholder="Enter Email" name="uname" required>
+                    <div class="container">
+                      <label for="uname"><b>EMAIL</b></label>
+                      <input type="text" placeholder="Enter Email" name="uname" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
+                      <label for="psw"><b>Password</b></label>
+                      <input type="PASSWORD" placeholder="Enter Password" name="psw" required>
 
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+                
                 <article class="clearfix"></article>
             </div>
         </main>
         
+        <!--FOOTER-->
         <footer>
             <div class="footerbox">
                 <img src="img/Monsters_inc_logo.png">

@@ -4,7 +4,7 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
-
+/*HEADER*/
 header{
     width: 100%;
     min-height: 150px;
@@ -22,10 +22,12 @@ header{
 .logocontainer{
     float: left;
 }
+
 .logocontainer img{
     width:100%
 }
 
+/*NAV*/
 .mainnav{
     width: 500px;
     height: auto;
@@ -66,7 +68,7 @@ header{
     color: #3A6889;
     font-size: 0.9em;
 }
-
+/*MAIN*/
 main{
     padding-top:420px;
 }
@@ -82,19 +84,15 @@ main img{
     margin-right: auto; 
 }
 
+/*SECTION - IMAGES*/
 section{
-    width: 283px;
-    float: left;
-    margin: 20px 0px 20px 20px;
-
-}
-
-section:nth-of-type(3n-2){
-    margin-left: 40px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section img{
-    width: 283px;
+    width: 100%;
 }
 
 section p{
@@ -215,6 +213,7 @@ span.psw {
     width: 30px;
 }
 
+/*FOOTER*/
 footer{
     height: 70px;
 }
@@ -232,6 +231,9 @@ footer{
     width: 50px;
     margin-top: 10px;
 }
+
+
+/*MEDIA QUERIES*/
 
 /* Small devices(landscape phones, 576px and up) */
 @media(min-width:0px){
@@ -254,12 +256,14 @@ footer{
     .secondnav{
         width: 100%
     }
-    
     .secondnav a:first-child{
         padding-left:110px;
     }
     main{
         padding-top: 200px;
+    }
+    section{
+        float:left;
     }
     
 }
@@ -278,6 +282,9 @@ footer{
     }
     main{
         padding-top: 150px;
+    }
+    section{
+        margin: 20px 0 20px 20px ;
     }
 }
 /*extra large devices (large desktop, 1200px and up) */
