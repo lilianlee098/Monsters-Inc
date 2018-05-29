@@ -92,6 +92,9 @@ main img{
     font-size: 0.9em;
     float: right
 }
+.secondp img:first-of-type{
+    width:98px;
+}
 
 .OBP{
     width:100%;

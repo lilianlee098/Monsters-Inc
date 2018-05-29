@@ -92,7 +92,9 @@ main img{
     font-size: 0.9em;
     float: right
 }
-
+.sidep img:first-of-type{
+    width:70px;
+}
 .opp{
     width:100%;
     float: left;
