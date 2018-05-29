@@ -42,6 +42,10 @@ header{
     color: #3A6899;
 }
 
+.logbtn{
+    margin-left: 20px;
+}
+
 .headerbox a:hover{
     color:black;
 }
@@ -221,8 +225,10 @@ footer{
 }
 
 /* Small devices(landscape phones, 576px and up) */
-@media(min-width:576px){
-
+@media(min-width:0px){
+    .logbtn{
+        display: none;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px){
@@ -232,6 +238,9 @@ footer{
     .mainnav{
         width: 100%;
         padding-top: 60px;
+    }
+    .logbtn{
+        display:initial;
     }
     .secondnav{
         width: 100%
