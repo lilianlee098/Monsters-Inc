@@ -27,7 +27,7 @@ header{
 }
 
 .mainnav{
-    width: 100%;
+    width: 500px;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -46,18 +46,9 @@ header{
     color:black;
 }
 
-.secondnav a{
-    float: left;
-    margin:0px 15px 15px 420px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #3A6889;
-    font-size: 0.9em;
-}
-
 
 main{
-    padding-top:150px;
+    padding-top:380px;
 }
 
 main img{
@@ -278,7 +269,6 @@ footer{
 
 .footerbox img{
     width: 50px;
-
     margin-top: 10px;
 }
 
@@ -292,11 +282,15 @@ footer{
         width:300px;
     }      
     .mainnav{
+        width: 100%;
         padding-top: 60px;
     }
     
     section{
         margin-left:0px; 
+    }
+    main{
+        padding-top: 200px;
     }
 
 }
@@ -317,6 +311,9 @@ footer{
 
     section:first-of-type{
         margin-left: 0px;
+    }
+    main{
+        padding-top: 150px;
     }
 }
 /*extra large devices (large desktop, 1200px and up) */

@@ -5,30 +5,35 @@
     <head>
     <title>Monsters Inc.</title>
         <link rel="stylesheet" href="css/aboutusstyle.css">
-          <script>
-// Get the modal
-var modal = document.getElementById('id01');
+        
+        <script src="jquery-3.3.1.min.js"></script>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </head>
 
     <body>
         
         <header>
             <div class="headerbox">
-                <a href="index.html"><img src="img/Monsters_inc_logo.jpg"></a>
+               <div class="logocontainer">
+                    <a href="index.html"><img src="img/Monsters_inc_logo.jpg"></a>
+                </div>
                 <div class="mainnav">
                     <a href="personal.html">PERSONAL</a>
                     <a href="business.html">BUSINESS</a>
                     <a href="products.html">PRODUCTS</a>
                     <a href="aboutus.html">ABOUT    US</a>
-                <a><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
+<!--                <a><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>-->
                     </div>
                 <div class="secondnav">
                     <a href="ourmonsters.html">OUR MONSTERS</a>
@@ -42,14 +47,14 @@ window.onclick = function(event) {
             
             <img src="img/2017-06-12%20(6).png">
             <div class="mainbox">
-                <section href="ourmonsters.html">
+                <a href="ourmonsters.html"><section>
                 <img src="img/Sulley_and_Mike.png">
                 <p>OUR MONSTERS</p>
-                </section>
-                <section><img src="img/YES!.png">
-                <p>OUR FACTORY</p></section>
-                <section><img src="img/I.png">
-                <p >OUR SERVICES</p></section>
+                </section></a>
+                <a href="ourfactory.html"><section><img src="img/YES!.png">
+                <p>OUR FACTORY</p></section></a>
+                <a href="ourservices.html"><section><img src="img/I.png">
+                <p >OUR SERVICES</p></section></a>
                 <!-- The Modal -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" 

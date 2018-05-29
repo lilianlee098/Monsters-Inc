@@ -7,60 +7,64 @@ body{
 
 header{
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     background-color: white;
     position: fixed;
 }
 
 .headerbox{
     max-width: 960px;
-    height: 150px;
+    min-height: 150px;
     margin-left: auto;
     margin-right: auto;
     color: #3A6899;
 }
-
-.headerbox img{
-    height:133px;
+.logocontainer{
     float: left;
-    padding: 9px;
+}
+.logocontainer img{
+    width:100%
+}
+
+.mainnav{
+    width: 500px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
 .mainnav a{
     float: left;
-    margin: 60px 15px 15px 15px;
-    font-weight: 900;
+    padding: 18px;
+    font-weight: 800;
     text-decoration: none;
     color: #3A6899;
-}
-
-.mainnav a:first-of-type{
- margin:60px 15px 15px 165px;
-}
-
-.mainnav a:last-of-type{
-    margin-top: 40px;
 }
 
 .headerbox a:hover{
     color:black;
 }
 
+.secondnav{
+    width: 360px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 .secondnav a{
     float: left;
-    margin:0px 15px 15px 15px;
+    padding: 10px;
     font-weight: 400;
     text-decoration: none;
     color: #3A6889;
     font-size: 0.9em;
 }
 
-.secondnav a:first-of-type{
-    margin-left: 217px;
-}
-
 main{
-    padding-top:150px;
+    padding-top:420px;
 }
 
 main img{
@@ -74,19 +78,18 @@ main img{
     margin-right: auto; 
 }
 
-section{
-    width: 283px;
-    float: left;
-    margin: 20px 0px 20px 20px;
-
+main a{
+    text-decoration: none;
 }
 
-section:first-of-type{
-    margin-left: 40px;
+section{
+    width: 283px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section img{
-    width: 283px;
+    width: 100%;
 }
 
 section p{
@@ -216,10 +219,72 @@ footer{
     max-width: 960px;
     height:70px;
     border-top: 1px solid black;
+    text-align: center;
 }
 
 .footerbox img{
     width: 50px;
-    margin-left: 450px;
     margin-top: 10px;
 }
+
+/* Small devices(landscape phones, 576px and up) */
+@media(min-width:576px){
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+      .logocontainer img{
+        width:300px;
+    }      
+    .mainnav{
+        width: 100%;
+        padding-top: 60px;
+    }
+    .secondnav{
+        width: 100%
+    }
+    
+    .secondnav a:first-child{
+        padding-left:110px;
+    }
+    
+    main{
+    width: 100%;    
+    }
+    main{
+        padding-top: 200px;
+    }
+    section{
+        float: left;
+    }
+    
+}
+/* large devices(desktops, 992px and up) */
+@media (min-width: 992px){
+
+    .logocontainer img{
+        width: 210px;
+        margin-top: 10px;
+    }
+     .mainnav a:first-child{
+        padding-left:160px;
+    }
+    .secondnav a:first-child{
+        padding-left:250px;
+    }
+    main{
+        padding-top: 150px;
+    }
+    section{
+        margin-left: 30px;
+    }
+
+}
+/*extra large devices (large desktop, 1200px and up) */
+/*
+@media (min-width:1200px){
+        .mainnav {
+        width: 100%;
+    }       
+}        
+*/
